@@ -1,0 +1,16 @@
+{{#link-to 'index'}}User{{/link-to}}
+<div class="well well-lg">
+  <img src="https://smedia.webcollage.net/rwvfp/wc/cp/19009944/module/amerifit/_cp/products/1297805486742/tab-d8690249-b16f-49b5-a35f-ba9e50cc32df/resource-c2a33d09-5a2c-4385-b0e5-7834bc1c36ff.jpg.w960.jpg" alt="Fun with UTIs" class='ads'>
+</div>
+<div class='container'>
+  <div class="row" id='topRow'>
+    <div class="col-md-4">
+      <ul class="list-unstyled">
+        {{#each model as |article|}}
+           {{update-article article=article destroyArticle="destroyArticle"}}
+        {{/each}}
+      </ul>
+      {{new-article saveArticle="saveArticle"}}
+    </div>
+  </div>
+</div>

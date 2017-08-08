@@ -1,0 +1,8 @@
+<li>
+  {{#if isArticleShowing}}
+     <img src="{{article.image}}"><br>{{article.title}}<br>{{article.author}}<br>{{article.body}}
+     <h1 {{action 'articleHide'}}>Home</h1>
+  {{else}}
+    <img src="{{article.image}}" {{action 'articleShow'}}><br>{{article.title}}<br>{{article.author}}
+  {{/if}}
+</li>
