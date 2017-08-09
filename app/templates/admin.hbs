@@ -7,7 +7,7 @@
     <div class="col-md-4">
       <ul class="list-unstyled">
         {{#each model as |article|}}
-           {{update-article article=article destroyArticle="destroyArticle"}}
+           {{update-article article=article update="update" destroyArticle="destroyArticle"}}
         {{/each}}
       </ul>
       {{new-article saveArticle="saveArticle"}}
